@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p >Contact list page</p>
+<!--todo:add correct html table syntax -->
+<div>
+<table border="1">
+<tr th:each="contact: ${contactList}"><td th:text="${contact}"></td></tr>
+</table>
+</div>
+
+<!--<div th:each="contact: ${contactList}">
+    <div>
+    <span th:text="${contact}"></span>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+</div>-->
+
+</body>
+</html>

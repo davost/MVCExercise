@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/contact}" method="post">
+        <!--<label>Full Name</label>
+        <input type="text" name="contact"/>-->
+        <label>Last Name</label>
+        <input type="text" name="contact"/>
+        <label>First Name</label>
+        <input type="text" name="contact"/>
+        <br />
+        <input value="Send" type="submit">
+    </form>
+<a th:href="@{/index}">Go to home page</a><br/>
+    <!-- todo:add a link to direct contactList page -->
+<a th:href="@{/contactList}">Go to contact list page</a>
+</body>
+</html>
